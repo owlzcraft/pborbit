@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Flex, Grid, GridItem, Heading, Image, Text } from "@chakra-ui/react";
-import { PhoneIcon,AddressIcon } from "@chakra-ui/icons";
+import { PhoneIcon } from "@chakra-ui/icons";
 
 
 const Footer = () => (
