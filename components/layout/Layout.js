@@ -1,13 +1,12 @@
-import Head from 'next/head';
+import Head from "next/head";
 
+import Footer from "./../footer/footer";
+import Header from "../header/Header";
 
-import Navbar from './../navbar/Navbar';
-import Footer from './../footer/footer';
-
-function Layout({ children, title = 'My Next.js App' }){
+function Layout({ children, title = "My Next.js App" }) {
   return (
     <div>
-      <Navbar />
+      <Header />
       {children}
       <Footer />
     </div>
