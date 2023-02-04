@@ -5,13 +5,15 @@ import { PhoneIcon } from "@chakra-ui/icons";
 
 
 const Footer = () => (
-  <Box w="100%" as="footer" bg="gray.700" >
-   
-      <Box m="auto" w="80%"  border=" 1px solid red">
-<Image src='/public/logo.png' alt="pb"  w="30px"
-              h="30px"  />
-      <Grid w="100%" templateColumns="repeat(3, 1fr)" gap={20}>
-        <GridItem w="95%" color={"white"} border=" 1px solid red"> 
+
+  <Box w="100%" as="footer" bg="gray.700" py={8}>
+    <Box pl="20px">
+
+      <Image src="/utils/Common/logo.png"/>
+
+      <Grid w="100%" templateColumns="repeat(3, 1fr)" gap={1}>
+        <GridItem w="35%" color={"white"}>
+
           <Text>
             Lorem ipsum is placeholder text commonly used in the graphic, print,
             and publishing industries for previewing layouts and visual mockups.
