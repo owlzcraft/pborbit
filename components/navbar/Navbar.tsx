@@ -3,7 +3,9 @@ import Link from "next/link";
 import { Flex, HStack } from "@chakra-ui/react";
 
 const Navbar = () => (
+
   <Flex w={"70%"}  p="4"  color="white">
+
     <HStack w="100%" spacing={10}>
       <Link href="/">
         <h1>Home</h1>
