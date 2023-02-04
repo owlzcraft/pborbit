@@ -6,7 +6,7 @@ import { PhoneIcon} from "@chakra-ui/icons";
 const Footer = () => (
   <Box w="100%" as="footer" bg="gray.700" py={8}>
     <Box pl="20px">
-<img src="./logo.png" alt="pb" />
+{/* <img src="./logo.png" alt="pb" /> */}
       <Grid w="100%" templateColumns="repeat(3, 1fr)" gap={1}>
         <GridItem w="35%" color={"white"}>
           <Text>
