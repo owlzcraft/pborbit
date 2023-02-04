@@ -8,17 +8,17 @@ function Header() {
       <header>
         <Flex w={"1500px"} alignItems={"center"}>
           <Box bg={"teal"} p="2" >
-            <Image width="150px" src="pborbit.png" alt="Logo" />
+            <Image width="150px" src="/utils/common/logo.png" alt="pborbit_logo" />
           </Box>
           <Spacer />
           <Box  bg="teal" w="50%">
             <Flex
               alignItems={"center"}
-              spacing={8}
+              
               justifyContent="space-arround"
             >
               <Navbar  />
-              <Button p={2} w={"160px"} colorScheme="whatsapp" N={40}>
+              <Button p={2} w={"160px"} colorScheme="whatsapp" >
                 Login/Signup
               </Button>
             </Flex>
