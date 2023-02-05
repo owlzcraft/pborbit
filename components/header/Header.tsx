@@ -4,9 +4,9 @@ import Navbar from "../navbar/Navbar";
 
 function Header() {
   return (
-    <>
-      <header>
-        <Flex w={"1500px"} alignItems={"center"}>
+   
+     
+        <Flex w={"1500px"} alignItems={"center"} style={{position:"fixed" ,zIndex:"12" }} >
           <Box bg={"teal"} p="2" >
             <Image width="150px" src="/utils/common/logo.png" alt="pborbit_logo" />
           </Box>
@@ -24,8 +24,8 @@ function Header() {
             </Flex>
           </Box>
         </Flex>
-      </header>
-    </>
+     
+ 
   );
 }
 
