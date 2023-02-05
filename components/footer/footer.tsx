@@ -6,19 +6,32 @@ import { PhoneIcon } from "@chakra-ui/icons";
 
 const Footer = () => (
 
-  <Box w="100%" as="footer" bg="gray.700" py={8}>
-    <Box pl="20px">
+  <Box w={{lg:"100%",md:"100%",sm:"100%"}} as="footer" bg="#050017" >
+    <Box m="auto" w={{lg:"80%",md:"80%",sm:"80%"}} pb={{lg:"70px",md:"20px" ,sm:"20px"}} pt={{lg:"70px",md:"20px" ,sm:"20px"}} >
 
-      <Image src="/utils/Common/logo.png"/>
+      <Image src="/utils/Common/logo.png" w={{lg:"16%",md:"24%",sm:"24%"}}  mb={2} />
 
-      <Grid w="100%" templateColumns="repeat(3, 1fr)" gap={1}>
-        <GridItem w="35%" color={"white"}>
+      <Grid w={{lg:"100%",md:"100%",sm:"100%"}}  templateColumns={{lg:"repeat(3, 1fr)" ,sm:"repeat(1, 1fr)"}} gap={1}>
+        <GridItem w={{lg:"95%",md:"95%",sm:"95%"}} color={"white"}   >
 
-          <Text>
+          <Text color="#B4B4B6">
             Lorem ipsum is placeholder text commonly used in the graphic, print,
             and publishing industries for previewing layouts and visual mockups.
           </Text>
-          <Heading >Payment Accept </Heading>
+          <Text  fontSize='24px' mt="20px" mb="20px" >Payment Accept </Text>
+           <Box>
+<Box display={"flex"} alignContent="center" pl="4px" ><Box border={"1px solid #B4B4B6"} w="43px" h="1px" mt="12px"></Box> 
+<Image src="/utils/Common/paypal.png" w={{lg:"16%",md:"24%",sm:"24%"}}  /><Box border={"1px solid #B4B4B6"} w="43px" h="1px" mt="12px"></Box>    </Box>
+<Box display={"flex"}>
+  <Image src="/utils/Common/visa.png" boxSize={{lg:"10%",md:"24%",sm:"24%"}}  /> 
+<Image src="/utils/Common/master.png" boxSize={{lg:"10%",md:"24%",sm:"24%"}}  />
+<Image src="/utils/Common/discover.png" boxSize={{lg:"10%",md:"24%",sm:"24%"}}  />
+<Image src="/utils/Common/american.png" boxSize={{lg:"10%",md:"24%",sm:"24%"}}  /> 
+</Box>
+
+
+           </Box>
+
         </GridItem>
         <GridItem m="20px" w="120%" color={"white"} border=" 1px solid red">
           <Flex direction={"column"}>
