@@ -4,15 +4,13 @@ import Navbar from "../navbar/Navbar";
 
 function Header() {
   return (
-    <>
-      <Box display={"flex"} justifyContent="center" id="header">
-        <Flex w={"95%"} p="25px" alignItems={"center"}>
-          <Box p="2" >
-            <Image
-              width="150px"
-              src="/utils/common/logo.png"
-              alt="pborbit_logo"
-            />
+
+   
+     
+        <Flex w={"1500px"} alignItems={"center"} style={{position:"fixed" ,zIndex:"12" }} >
+          <Box bg={"teal"} p="2" >
+            <Image width="150px" src="/utils/common/logo.png" alt="pborbit_logo" />
+
           </Box>
           <Spacer />
           <Box borderRadius="7px" w="50%" h="60px" bg="teal"> 
@@ -25,8 +23,10 @@ function Header() {
             </Flex>
           </Box>
         </Flex>
-      </Box>
-    </>
+
+     
+ 
+
   );
 }
 
