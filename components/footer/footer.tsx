@@ -12,6 +12,7 @@ import {
 
 import { PhoneIcon } from "@chakra-ui/icons";
 
+
 // import { MdLocationOn } from "@react-icons/all-files"
 import { MdLocationOn } from "@react-icons/all-files/md/MdLocationOn";
 
@@ -23,6 +24,7 @@ const Footer = () => (
       pb={{ lg: "70px", md: "70px", sm: "70px" }}
       pt={{ lg: "70px", md: "20px", sm: "20px" }}
      
+
     >
       <Image
         src="/utils/Common/logo.png"
@@ -32,7 +34,9 @@ const Footer = () => (
 
       <Grid
         w={{ lg: "100%", md: "100%", sm: "100%" }}
+
         templateColumns={{ lg: "repeat(3, 1fr)", sm: "repeat(1, 1fr)",md: "repeat(3, 1fr)" }}
+
         gap={1}
       >
         <GridItem w={{ lg: "95%", md: "95%", sm: "95%" }} color={"white"}>
@@ -40,13 +44,16 @@ const Footer = () => (
             Lorem ipsum is placeholder text commonly used in the graphic, print,
             and publishing industries for previewing layouts and visual mockups.
           </Text>
+
           <Text fontSize={{lg:"24px",md:"24px",sm:"24px" }} mt={{lg:"20px",md:"20px",sm:"20px" }} mb={{lg:"20px",md:"20px",sm:"20px" }}>
+
             Payment Accept{" "}
           </Text>
           <Box>
             <Box display={"flex"} alignContent="center" pl="4px">
               <Box
                 border={"1px solid #B4B4B6"}
+
                 w={{lg:"43px",md:"43px",sm:"22px" }}
                 h="1px"
                 mt={{lg:"12px",md:"12px",sm:"6px" }}
@@ -60,11 +67,13 @@ const Footer = () => (
                 w={{lg:"43px",md:"43px",sm:"22px" }}
                 h="1px"
                 mt={{lg:"12px",md:"12px",sm:"6px" }}
+
               ></Box>{" "}
             </Box>
             <Box display={"flex"}>
               <Image
                 src="/utils/Common/visa.png"
+
                 boxSize={{ lg: "10%", md: "5%", sm: "5%" }}
               />
               <Image
@@ -78,6 +87,7 @@ const Footer = () => (
               <Image
                 src="/utils/Common/american.png"
                 boxSize={{ lg: "10%", md: "5%", sm: "5%" }}
+
               />
             </Box>
           </Box>
@@ -87,6 +97,7 @@ const Footer = () => (
          >
           <Flex direction={"column"}>
             <Box display={"flex"}>
+
               <Box>
                 <Box display={"flex"}>
                   <PhoneIcon pt="6px" boxSize={4} color="purple" mr="5px" />
@@ -159,10 +170,12 @@ const Footer = () => (
               </Box>
               <Box bg="white" borderRadius="50%"   boxSize="25px" display={"flex"} justifyContent="center" >
                
+
                 <a href="https://twitter.com/Bigbasket_com">
                   <Image
                     src="https://cdn-icons-png.flaticon.com/128/733/733579.png"
                     alt="insta"
+
                     w="100%"
                     // h="13px"
                     p="5px"
@@ -181,15 +194,18 @@ const Footer = () => (
                     p="5px"
                   />
               
+
               </Box>
             </Box>
           </Flex>
         </GridItem>
         <GridItem
+
           ml={{lg:"200px",md:"200px",sm:"00px"}}
           // border=" 1px solid red"
           w="45%"
           color="#B4B4B6"
+
           gap="10px"
         >
           <Text mb={2}>Home</Text>
@@ -201,12 +217,15 @@ const Footer = () => (
       </Grid>
     </Box>
 
+
     <Box bg="#170d3d" height="50px" display={"flex"} alignItems="center" justifyContent={"center"}   >
       <Text color="#B4B4B6">
+
         © {new Date().getFullYear()} PBorbit Pvt. Ltd.. All Right Reserved
       </Text>
     </Box>
   </Box>
 );
+//
 
 export default Footer;
