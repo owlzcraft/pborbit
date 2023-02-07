@@ -5,25 +5,27 @@ import Navbar from "../navbar/Navbar";
 function Header() {
   return (
 
-   
-     
-        <Flex w={"1500px"} alignItems={"center"} style={{position:"fixed" ,zIndex:"12" }} >
-          <Box bg={"teal"} p="2" >
+   <Box position="relative"  >
+
+  
+        <Flex w={"1500px"} alignItems={"center"} style={{position:"fixed" ,zIndex:"12" }} mb="220px" >
+          <Box bg="#050017" p="2" ml="90px" >
             <Image width="150px" src="/utils/common/logo.png" alt="pborbit_logo" />
 
           </Box>
           <Spacer />
-          <Box borderRadius="7px" w="50%" h="60px" bg="teal"> 
+          <Box borderRadius="7px" w="50%" h="60px" bg="#050116"> 
           {/* bg="#050116" */}
             <Flex alignItems={"center"} justifyContent="space-arround">
               <Navbar />
-              <Button p={2} w={"160px"} colorScheme="whatsapp">
+              <Button p={2} w={"160px"} colorScheme="whatsapp"  borderRadius={"20px"}>
                 Login/Signup
               </Button>
             </Flex>
           </Box>
         </Flex>
 
+        </Box>
      
  
 

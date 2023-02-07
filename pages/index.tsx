@@ -1,13 +1,21 @@
-import Head from 'next/head'
-import { Inter } from '@next/font/google'
+import Head from "next/head";
+import { Inter } from "@next/font/google";
 
-import styles from '@/styles/Home.module.css'
+import styles from "@/styles/Home.module.css";
 import {
   Box,
- 
+  Button,
+  Center,
+  Grid,
+  GridItem,
+  Heading,
+  Image,
+  Text,
+  Flex
 } from "@chakra-ui/react";
+import Home from "./Home";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Homee() {
   return (
@@ -18,30 +26,61 @@ export default function Homee() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      {/* banner-img */}
+      <main>
+        <Box bg="#050017" color={"white"}>
+          <Image
+            style={{
+              position: "absolute",
+              right: "-50px",
+              top: "-20px",
+              zIndex: 1,
+            }}
+            src="/utils/Common/banner-img.png"
+            alt="pborbit"
+          />
+          <Image
+            style={{ position: "absolute", left: "550px", top: "-20px" }}
+            src="/utils/Common/ns2.png"
+            alt="pborbit"
+          />
+          <Image
+            style={{
+              position: "absolute",
+              // right: "-50px",
+              left: "-140px",
+              top: "480px",
+              zIndex: 1,
+            }}
+            src="/utils/Common/bsi1.png"
+            alt="pborbit"
+          />
+          <Image
+            style={{ position: "absolute", left: "-140px", top: "480px" }}
+            src="/utils/Common/bsi2.png"
+            alt="pborbit"
+          />
 
-      <main >
-      <Box>
-<img style={{position:"relative"}} src="https://www.freecodecamp.org/news/content/images/size/w2000/2021/06/w-qjCHPZbeXCQ-unsplash.jpg" />
-<p>yetreurteuyrte
-  gfufgwefgew
-
-  kgdaskjgkajsssssh
-  ss
-  s
-  s
-  s
-  s
-  s
-  s
-  s
-  s
-  s
-</p>
-
-      </Box>
-    
-
+          <Image
+            style={{ position: "absolute", left: "-140px", bottom: "800px" }}
+            src="/utils/Common/dot-bg.png"
+            alt="pborbit"
+          />
+          <Image
+            style={{
+              position: "absolute",
+              right: "-20px",
+              // left: "1140px",
+              top: "940px",
+              zIndex: 1,
+            }}
+            src="/utils/Common/half-circle.png"
+            alt="pborbit"
+          />
+{/* leading page */}
+          <Home />
+        </Box>
       </main>
     </Box>
-  )
+  );
 }

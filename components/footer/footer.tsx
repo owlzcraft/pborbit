@@ -17,7 +17,7 @@ import { PhoneIcon } from "@chakra-ui/icons";
 import { MdLocationOn } from "@react-icons/all-files/md/MdLocationOn";
 
 const Footer = () => (
-  <Box w={{ lg: "100%", md: "100%", sm: "100%" }} as="footer" bg="#050017"  p={{ lg: "0px", md: "0px", sm: "00px" }}>
+  <Box w={{ lg: "100%", md: "100%", sm: "100%" }} as="footer" bg="#050017"  p={{ lg: "0px", md: "0px", sm: "00px" }} position="relative">
     <Box
       m="auto"
       w={{ lg: "80%", md: "80%", sm: "80%" }}
