@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import {
   Box,
   Button,
@@ -11,22 +12,31 @@ import React from "react";
 import { FunctionComponent } from "react";
 
 const Pricing: FunctionComponent = () => {
+    const newLocal:object = {
+        w:"55%",
+        position:"absolute",
+        bottom:"10px",
+        right:"30px",
+        src:"/utils/Common/price-bg.png",
+        alt:"pborbit",
+
+        zIndex:"-1"} 
   return (
     <Box position={"relative"} zIndex="5">
       <Center mt="40px">
         {" "}
-        <Heading>How it Works</Heading>{" "}
+        <Heading>{"How it Works"}</Heading>{" "}
       </Center>
       <Center mt="20px">
         {" "}
-        <Text w="35%" textAlign="center" color="#B4B4B6">
+        <Text w={["90%","35%"]} textAlign="center" color="#B4B4B6">
           Lorem Ipsum is simply dummy text of the printing and type setting
           industryLorem Ipsum is simply
         </Text>{" "}
       </Center>
       <Center>
-        <Flex gap={10} mt="40px">
-          <Box bg="#10023B" w="50%" borderRadius={"10px"} position={"relative"}>
+        <Flex gap={10} mt="40px"  display={{ lg: "flex", md: "flex", sm: "block" }}>
+          <Box bg="#10023B" w={["90%","50%"]}borderRadius={"10px"} position={"relative"}>
             <Image
               position={"absolute"}
               w="15%"
@@ -130,7 +140,7 @@ const Pricing: FunctionComponent = () => {
               </Center>
             </Box>
           </Box>
-          <Box bg="#10023B" w="50%" borderRadius={"10px"} position={"relative"}>
+          <Box bg="#10023B" w={["90%","50%"]} mt={["20px","0px"]} mb={["20px" ,"0px"]} borderRadius={"10px"} position={"relative"}>
             <Image
               position={"absolute"}
               w="15%"
@@ -236,16 +246,7 @@ const Pricing: FunctionComponent = () => {
         </Flex>
       </Center>
 
-      <Image
-        w="55%"
-        position="absolute"
-        bottom="10px"
-        right="30px"
-        src="/utils/Common/price-bg.png"
-        alt="pborbit"
-
-        zIndex="-1"
-      />
+      <Image style= {newLocal}  />
     </Box>
   );
 };

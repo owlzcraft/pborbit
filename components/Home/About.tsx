@@ -4,15 +4,16 @@ import { FunctionComponent } from 'react'
 const About: FunctionComponent = () => {
     return (
         <Box
-        display={"flex"}
+       
         justifyContent="space-between"
         mt="40px"
-        p="120px"
+        p={["40px","0px", "120px"]}
+        display={[ "block", "flex",  "flex",  "flex" ]}
       >
         <Box>
           <Image src="/utils/Common/about-img.png" alt="pborbit" />{" "}
         </Box>
-        <Box pl="190px" w="50%" mt="80px">
+        <Box pl={["opx", "0px", "190px", "190px"]} w={["90%","50%","50%","50%","50%" ]}mt="80px">
           <Heading>About PBorbit</Heading>
           <Text pt="10px" color="#B4B4B6">
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -81,16 +82,16 @@ const About: FunctionComponent = () => {
           </Box>
 
           <Button
-            mt="40px"
-            colorScheme="whatsapp"
-            w="50%"
-            fontSize={"20px"}
-            h="40px"
-            borderRadius={"20px"}
-          >
-            {" "}
-            Get Sarted{" "}
-          </Button>
+          mt="40px"
+          colorScheme="whatsapp"
+          w={["70%","30px","30px","50%"]}
+          fontSize={["15px","30px","30px","30px"]}
+          h={["40px","30px","30px","60px"]}
+          borderRadius={["20px","30px","30px","20px"]}
+        >
+        
+          Get Sarted →→
+        </Button>
         </Box>
       </Box>
 

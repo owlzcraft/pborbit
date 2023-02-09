@@ -1,25 +1,28 @@
-import React from 'react';
+// import React from 'react';
 import { FunctionComponent } from 'react'
 import { Box, Center, Flex, Heading, Image, Text } from '@chakra-ui/react';
+// import { NextScript } from 'next/document';
 const People: FunctionComponent = () => {
-  return (
-    <Box>
 
-      <Center>
-        {" "}
-        <Heading>How it Works</Heading>{" "}
+
+  return (
+    <Box  mt="40px">
+
+      <Center >
+
+       { <Heading >How it Works</Heading>}
       </Center>
       <Center mt="20px">
         {" "}
-        <Text w="35%" textAlign="center" color="#B4B4B6" mb="20px">
+        <Text w={["90%","35%"]} textAlign="center" color="#B4B4B6" m="20px">
           Lorem Ipsum is simply dummy text of the printing and type
           setting industryLorem Ipsum is simply
         </Text>{" "}
       </Center>
-      <Box display={"flex"} w="80%" m="auto" gap="25px">
+      <Box  display={[ "block", "flex", "flex", "flex" ]} w="80%" m="auto" gap="25px">
 
 
-        <Box w="33%" bgColor="#0E343D">
+        <Box w={["90%","35%"]} bgColor="#0E343D">
           <Center mt="20px">
 
             <Image
@@ -48,7 +51,7 @@ const People: FunctionComponent = () => {
           </Center>
         </Box>
 
-        <Box w="33%" bgColor="#0E343D">
+        <Box w={["90%","35%","35%","35%","35%"]} bgColor="#0E343D">
           <Center mt="20px">
 
             <Image
@@ -77,7 +80,7 @@ const People: FunctionComponent = () => {
           </Center>
         </Box>
 
-        <Box w="33%" bgColor="#0E343D">
+        <Box w={["90%","35%","35%","35%","35%"]} bgColor="#0E343D">
           <Center mt="20px">
 
             <Image
