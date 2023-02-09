@@ -13,12 +13,11 @@ import { FunctionComponent } from "react";
 
 const Pricing: FunctionComponent = () => {
     const newLocal:object = {
-        w:"55%",
+        w:"77%",
         position:"absolute",
-        bottom:"10px",
-        right:"30px",
-        src:"/utils/Common/price-bg.png",
-        alt:"pborbit",
+        bottom:"57px",
+        right:"2px",
+       
 
         zIndex:"-1"} 
   return (
@@ -34,9 +33,9 @@ const Pricing: FunctionComponent = () => {
           industryLorem Ipsum is simply
         </Text>{" "}
       </Center>
-      <Center>
-        <Flex gap={10} mt="40px"  display={{ lg: "flex", md: "flex", sm: "block" }}>
-          <Box bg="#10023B" w={["90%","50%"]}borderRadius={"10px"} position={"relative"}>
+      
+        <Flex gap={10} mt="40px"  ml={["50px","20px","20px","80px","200px"]}  w={[ "80%" ,"90%" ]} display={{ lg: "flex", md: "flex", sm: "block" }}>
+          <Box bg="#10023B" pb="200px" w={["90%","40%"]}borderRadius={"10px"} position={"relative"}>
             <Image
               position={"absolute"}
               w="15%"
@@ -51,7 +50,7 @@ const Pricing: FunctionComponent = () => {
               borderTopStartRadius={"10px"}
               mb="10px"
             >
-              <Heading fontSize="20px" p="20px">
+              <Heading fontSize="40px" p="20px">
                 {" "}
                 Player{" "}
               </Heading>{" "}
@@ -60,7 +59,7 @@ const Pricing: FunctionComponent = () => {
             <Center>
               <Flex>
                 {" "}
-                <Heading fontSize="20px">$12</Heading> <Text> per annul</Text>{" "}
+                <Heading fontSize="40px">$12</Heading> <Text> per annul</Text>{" "}
               </Flex>
             </Center>
             <Center mb="20px" mr="60px">
@@ -68,7 +67,13 @@ const Pricing: FunctionComponent = () => {
                 of single{" "}
               </Text>
             </Center>
-            <Box p="20px">
+            <Box pl={[  "0px","150px"]} pt={["0px","10px"]}
+            
+            
+            
+            
+            
+            >
               <Box display="flex" alignItems="center" gap={"10px"}>
                 {" "}
                 <Image
@@ -76,7 +81,7 @@ const Pricing: FunctionComponent = () => {
                   src="/utils/Common/checklist.png"
                   alt="pb"
                 />{" "}
-                <Text> Court reservations</Text>
+                <Text fontSize="20px"> Court reservations</Text>
               </Box>
               <Box display="flex" alignItems="center" gap={"10px"}>
                 {" "}
@@ -85,7 +90,7 @@ const Pricing: FunctionComponent = () => {
                   src="/utils/Common/checklist.png"
                   alt="pb"
                 />
-                <Text> Community Manage</Text>
+                <Text fontSize="20px"> Community Manage</Text>
               </Box>
               <Box display="flex" alignItems="center" gap={"10px"}>
                 {" "}
@@ -94,7 +99,7 @@ const Pricing: FunctionComponent = () => {
                   src="/utils/Common/checklist.png"
                   alt="pb"
                 />
-                <Text> Manage Your Court Easily</Text>
+                <Text fontSize="20px"> Manage Your Court Easily</Text>
               </Box>
               <Box display="flex" alignItems="center" gap={"10px"}>
                 {" "}
@@ -103,7 +108,7 @@ const Pricing: FunctionComponent = () => {
                   src="/utils/Common/checklist.png"
                   alt="pb"
                 />
-                <Text> Court reservations</Text>
+                <Text fontSize="20px"> Court reservations</Text>
               </Box>
               <Box display="flex" alignItems="center" gap={"10px"}>
                 {" "}
@@ -112,7 +117,7 @@ const Pricing: FunctionComponent = () => {
                   src="/utils/Common/checklist.png"
                   alt="pb"
                 />
-                <Text> Install app and get Rewards</Text>
+                <Text fontSize="20px"> Install app and get Rewards</Text>
               </Box>
 
               <Box display="flex" alignItems="center" gap={"10px"}>
@@ -122,25 +127,25 @@ const Pricing: FunctionComponent = () => {
                   src="/utils/Common/checklist.png"
                   alt="pb"
                 />
-                <Text> Community Manage</Text>
+                <Text fontSize="20px"> Community Manage</Text>
               </Box>
 
-              <Center>
+
                 <Button
-                  mt="30px"
+                  mt={["30px","0px"]}
                   colorScheme="whatsapp"
                   w="50%"
                   fontSize={"13px"}
-                  h="30px"
+                 
                   borderRadius={"20px"}
                 >
                   {" "}
                   Get Sarted{" "}
                 </Button>
-              </Center>
+              
             </Box>
           </Box>
-          <Box bg="#10023B" w={["90%","50%"]} mt={["20px","0px"]} mb={["20px" ,"0px"]} borderRadius={"10px"} position={"relative"}>
+          <Box bg="#10023B" w={["90%","40%"]} mt={["20px","0px"]} mb={["20px" ,"0px"]} borderRadius={"10px"} position={"relative"}>
             <Image
               position={"absolute"}
               w="15%"
@@ -244,9 +249,12 @@ const Pricing: FunctionComponent = () => {
             </Box>
           </Box>{" "}
         </Flex>
-      </Center>
+      
 
-      <Image style= {newLocal}  />
+      <Image style= {newLocal}
+      
+      src="/utils/Common/price-bg.png"
+        alt="pborbit" />
     </Box>
   );
 };

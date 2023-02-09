@@ -3,7 +3,7 @@ import React from 'react';
 import { FunctionComponent } from 'react'
 const HomePage: FunctionComponent = () => {
 return (
-        <Box pt={["100px","220px","220px","200px","320px"]} w="50%" ml={["40px","40px","40px","90px","30px"]}>
+        <Box pt={["100px","220px","220px","200px","320px"]} w="50%" ml={["40px","40px","40px","90px","75px"]} mb={["0px","0px","0px","190px","175px"]}>
         <Text color={"green"} fontSize={["15px","15px","30px","30px","30px"]}>
           We are pborbit
         </Text>

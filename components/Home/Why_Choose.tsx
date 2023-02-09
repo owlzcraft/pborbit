@@ -1,10 +1,14 @@
-import { Box, Grid, GridItem, Heading, Image, Text } from '@chakra-ui/react';
+import { Box, Center, Grid, GridItem, Heading, Image, Text } from '@chakra-ui/react';
 // import Image from 'next/image';
 import React from 'react';
 import { FunctionComponent } from 'react'
 const Why_choose: FunctionComponent = () => {
     return (
-        <Box pl={["40px" ,"300px","0px","0px"]} pr={[ "10px", "250px"]} mt="80px"  display={{ lg: "flex", md: "flex", sm: "block" }}>
+    
+        <Box 
+        pl={["40px" ,"40px" ,"300px","50px","300px"]}
+         pr={[ "10px", "250px","10px", "50px", "50px"]}
+          mt="80px"  display={{ lg: "flex", md: "flex", sm: "block" }}>
         <Box>
           {" "}
           <Image src="/utils/Common/why-img.png" alt="pb" />{" "}
@@ -15,7 +19,7 @@ const Why_choose: FunctionComponent = () => {
           <Heading mt="40px" mb="40px">
             Why Choose PBorbit
           </Heading>
-          <Text pt="10px" color="#B4B4B6" mb="20px">
+          <Text pt="10px" w={[ "90%","10%","10%","10%","63%"]} color="#B4B4B6" mb="20px">
             Lorem Ipsum is simply dummy text of the printing and type
             setting industryLorem Ipsum is simply
           </Text>
@@ -52,6 +56,7 @@ const Why_choose: FunctionComponent = () => {
         </Box>
 
       </Box>
+      
     );
   };
   export default Why_choose;

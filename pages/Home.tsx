@@ -15,8 +15,8 @@ return (
         <HomePage/>
         <About/>
         <Why_choose/>
-        <App_install/>
         <How_it_work/>
+        <App_install/>
         <People/>
         <Pricing />
       </div>

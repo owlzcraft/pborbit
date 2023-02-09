@@ -10,7 +10,7 @@ const People: FunctionComponent = () => {
 
       <Center >
 
-       { <Heading >How it Works</Heading>}
+       { <Heading >What people say about PBorbot</Heading>}
       </Center>
       <Center mt="20px">
         {" "}
@@ -19,7 +19,7 @@ const People: FunctionComponent = () => {
           setting industryLorem Ipsum is simply
         </Text>{" "}
       </Center>
-      <Box  display={[ "block", "flex", "flex", "flex" ]} w="80%" m="auto" gap="25px">
+      <Box  display={[ "block", "flex", "flex", "flex" ,"flex"]} w="80%" m="auto" gap="25px">
 
 
         <Box w={["90%","35%"]} bgColor="#0E343D">
@@ -41,7 +41,7 @@ const People: FunctionComponent = () => {
           <Box borderTop={'1px solid #5F5F60'} w="90%" m="auto" ></Box>
           <Center mb="80px">
             <Flex alignItems="center" w="80%" m="auto" gap="5">
-              <Box mt="5" w="15%" h="40px" borderRadius="50%" bgColor={"white"}></Box>
+              <Box mt="5px" w="15%" h="40px" borderRadius="50%" bgColor={"white"}></Box>
               <Box mt="5" w="70%" h="50px"  >
                 <Text>Mariella Wingniton</Text>
                 <Text color="#B4B4B6">Los Angeles CA</Text>
