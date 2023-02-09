@@ -22,7 +22,7 @@ const Pricing: FunctionComponent = () => {
 
         zIndex:"-1"} 
   return (
-    <Box position={"relative"} zIndex="5">
+    <Box position={"relative"} zIndex="0">
       <Center mt="40px">
         {" "}
         <Heading>{"How it Works"}</Heading>{" "}

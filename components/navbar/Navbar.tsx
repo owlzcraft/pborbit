@@ -28,7 +28,7 @@ const Navbar: FunctionComponent =()=>{
 return (
     <Box position="fixed" w="100%" zIndex="4" >
       <Flex
-        w={"90%"}
+        w={[ "100%", "90%"]}
         alignItems={"center"}
         p="4"
         m="auto"
@@ -36,10 +36,10 @@ return (
         justifyContent="space-evenly"
         position="relative"
       >
-        <Box w="40%">
+        <Box w={["30%","40%","40%","40%","40%"]}>
           <Image
             src="/utils/Common/logo.png"
-            w={{ lg: "16%", md: "24%", sm: "24%" }}
+            w={[ "100%", "24%", "24%","24%", "24%"  ]}
             mb={2}
             alt="pb"
           />
@@ -49,7 +49,7 @@ return (
         p="10px"
           w="60%"
           justifyContent={"space-evenly"}
-          display={["none","none","none","flex"]}
+          display={["none","none","none","none","flex"]}
           bg="#050017
           
           "
@@ -84,7 +84,7 @@ return (
 
         {/* menubar */}
 
-        <Box display={{ lg: "none", md: "none", sm: "block" }}>
+        <Box display={["block", "none","none", "none" ]}>
           <Menu>
             {newLocal}
             <MenuList>
