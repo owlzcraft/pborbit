@@ -32,11 +32,10 @@ export default function Homee() {
 
 {/* main image */}
           <Image 
-          
-          position="absolute"
+        position="absolute"
           w={["65%","65%", "65%","65%","65%"]}
-              right={[ "-1px","1px","1px","1px"]}
-              top={["0px","0px","0px","0px"]}
+              right={[ "-1px","1px","1px","1px","1px"]}
+              top={["0px","0px","0px","0px","-1px"]}
               zIndex= "1"
             src="/utils/Common/banner-img.png"
             alt="pborbit"
@@ -45,26 +44,29 @@ export default function Homee() {
           {/* orage */}
           <Image
             position="absolute"
-           left={["118px","270px","505px","471px"]}
-            top={["0px","0px","0px","0px"]}
+           left={["118px","258px","270px","505px","471px"]}
+            top={["0px","0px","0px","0px","0px"]}
              w={["88%","85%","85%","85%","85%"]}
             
             src="/utils/Common/ns2.png"
             alt="pborbit"
           />
           <Image
-            style={{
-              position: "absolute",
-              // right: "-50px",
-              left: "-140px",
-              top: "480px",
-              zIndex: 1,
-            }}
+           
+            zIndex= "1"
+            position="absolute"
+            left={["-70px","-75px","75px","-73px","-172px"]}
+            top={["85px","80px","80px","252px","252px"]}
+             w={["27%","16%","16%","16%","16%"]}
             src="/utils/Common/bsi1.png"
             alt="pborbit"
           />
           <Image
-            style={{ position: "absolute", left: "-140px", top: "480px" }}
+            // style={{ position: "absolute", left: "-140px", top: "480px" }}
+            position="absolute"
+            left={["-75px","258px","270px","-73px","-172px"]}
+            top={["84px","0px","0px","252px","252"]}
+             w={["29%","16%","16%","16%","16%"]}
             src="/utils/Common/bsi2.png"
             alt="pborbit"
           />
