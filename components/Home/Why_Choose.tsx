@@ -4,7 +4,7 @@ import React from 'react';
 import { FunctionComponent } from 'react'
 const Why_choose: FunctionComponent = () => {
     return (
-        <Box display="flex" pl="300px" pr="250px" mt="80px">
+        <Box pl={["40px" ,"300px","0px","0px"]} pr={[ "10px", "250px"]} mt="80px"  display={{ lg: "flex", md: "flex", sm: "block" }}>
         <Box>
           {" "}
           <Image src="/utils/Common/why-img.png" alt="pb" />{" "}

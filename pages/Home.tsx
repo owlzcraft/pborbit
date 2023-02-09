@@ -10,13 +10,13 @@ import { FunctionComponent } from 'react'
 // import Pricing from './Pricing';
 // import Pricing from './Pricing';
 const Home: FunctionComponent = () => {
-    return (
+return (
       <div>
         <HomePage/>
         <About/>
         <Why_choose/>
-        <How_it_work/>
         <App_install/>
+        <How_it_work/>
         <People/>
         <Pricing />
       </div>

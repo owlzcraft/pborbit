@@ -13,7 +13,7 @@ import {
 import { PhoneIcon } from "@chakra-ui/icons";
 
 
-// import { MdLocationOn } from "@react-icons/all-files"
+
 import { MdLocationOn } from "@react-icons/all-files/md/MdLocationOn";
 
 const Footer = () => (
