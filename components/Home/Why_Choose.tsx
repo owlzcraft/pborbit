@@ -10,8 +10,8 @@ const Why_choose: FunctionComponent = () => {
          pr={[ "10px", "250px","10px", "50px", "50px"]}
           mt="80px"  display={{ lg: "flex", md: "flex", sm: "block" }}>
         <Box>
-          {" "}
-          <Image src="/utils/Common/why-img.png" alt="pb" />{" "}
+       
+          <Image src="/utils/Common/why-img.png" alt="pb" />
         </Box>
 
         <Box>

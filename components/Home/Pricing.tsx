@@ -20,6 +20,8 @@ const Pricing: FunctionComponent = () => {
        
 
         zIndex:"-1"} 
+
+
   return (
     <Box position={"relative"} zIndex="0">
       <Center mt="40px">
@@ -34,7 +36,7 @@ const Pricing: FunctionComponent = () => {
         </Text>{" "}
       </Center>
       
-        <Flex gap={10} mt="40px"  ml={["50px","20px","20px","80px","200px"]}  w={[ "80%" ,"90%" ]} display={{ lg: "flex", md: "flex", sm: "block" }}>
+        <Flex gap={[10,10]} mt="40px"  ml={["50px","20px","20px","80px","200px"]}  w={[ "80%" ,"90%" ]} display={{ lg: "flex", md: "flex", sm: "block" }}>
           <Box bg="#10023B" pb="200px" w={["90%","40%"]}borderRadius={"10px"} position={"relative"}>
             <Image
               position={"absolute"}

@@ -10,7 +10,7 @@ const People: FunctionComponent = () => {
 
       <Center >
 
-       { <Heading >What people say about PBorbot</Heading>}
+        <Heading size={"xl"} >What people say about PBorbot </Heading>
       </Center>
       <Center mt="20px">
         {" "}
