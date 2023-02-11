@@ -22,56 +22,31 @@ const Signin: React.FunctionComponent<ISigninProps> | any = () => {
       alignItems={"center"}
       gap="10px"
     >
-      <Image width="150px" src="/utils/common/logo.png" alt="pborbit_logo" />
-      <Heading color={"white"}>Welcome Back</Heading>
-      <Text color={"white"}>Start with signing up or sign in</Text>
+      {/* <Flex border={'1px solid red'} flexDirection={'column'} alignItems={'center'} gap="10px"> */}
+            <Image  width="150px" src="/utils/common/logo.png" alt="pborbit_logo" />
+            <Heading color={'white'}>Welcome Back</Heading> 
+            <Text color={'white'}>Start with signing up or sign in</Text>
+           
+           <Box display={'flex'} border={'1px solid white'} borderRadius="5px"
+            w={["60%","50%","45%","22%"]} pl="10px"> <Image  src="/utils/common/attherate.svg" alt="pborbit_logo" /><Input color="white" border={'none'} placeholder="Enter Address"/></Box>
 
-      <Box
-        display={"flex"}
-        border={"1px solid white"}
-        borderRadius="5px"
-        w="22%"
-        pl="10px"
-      >
-        {" "}
-        <Image src="/utils/common/attherate.svg" alt="pborbit_logo" />
-        <Input color="white" border={"none"} placeholder="Enter Address" />
-      </Box>
+            <Box display={'flex'} border={'1px solid white'} borderRadius="5px"
+            w={["60%","50%","45%","22%"]} pl="10px"> <Image  src="/utils/common/password.svg" alt="pborbit_logo" /><Input color="white" border={'none'} placeholder="Enter Address"/></Box>
+            <Box w={["60%","50%","45%","22%"]} fontSize={["8px","10px","10px","10px"]} border={'1px solid red'}  display="flex" alignItems={'center'} justifyContent={'space-between'}>
+            <Checkbox  color="white" size="sm">Remember me</Checkbox>
+            <Text color="white" fontSize={["8px","12px","12px","12px"]} >Forgot Password ?</Text>
 
-      <Box
-        display={"flex"}
-        border={"1px solid white"}
-        borderRadius="5px"
-        w="22%"
-        pl="10px"
-        pr="10px"
-      >
-        {" "}
-        <Image src="/utils/common/password.svg" alt="pborbit_logo" />
-        <Input color="white" border={"none"} placeholder="Enter Address" />
-        <Image src="/utils/common/hide-2.svg" alt="pborbit_logo" />
-      </Box>
-      <Box
-        w="22%"
-        fontSize={"14px"}
-        display="flex"
-        alignItems={"center"}
-        justifyContent={"space-between"}
+            </Box>
 
-        color="#6A6A6A"
-      >
-        <Checkbox>Remember me</Checkbox>
-        <Text fontSize={"14px"}>Forgot Password ?</Text>
-      </Box>
+        
 
-      <Button mt="15px" bg="#00E276" color="white" pl="110px" pr="110px">
-        Login
-      </Button>
+            <Button mt="15px" bg="#00E276" color="white" w={["60%","50%","45%","22%"]}>Login</Button>
 
-      <Text mt="30px" color="white">
-        Don’t have an account? SignUp
-      </Text>
-    </Flex>
+            <Text mt="30px" color="white">Don’t have an account? SignUp</Text>
+           
+
+
+            </Flex>
   );
 };
 

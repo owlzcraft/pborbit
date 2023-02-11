@@ -18,8 +18,8 @@ return (
              <Navbar/>
         <HomePage/>
         <About/>
-        <Why_choose/>
         <How_it_work/>
+        <Why_choose/>
         <App_install/>
         <People/>
         <Pricing />

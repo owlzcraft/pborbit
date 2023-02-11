@@ -1,6 +1,7 @@
 import { Box, Button, Heading, Image, Text } from '@chakra-ui/react';
 import React from 'react';
 import { FunctionComponent } from 'react'
+import { Flex } from '@chakra-ui/react';
 const About: FunctionComponent = () => {
     return (
         <Box
@@ -24,7 +25,7 @@ const About: FunctionComponent = () => {
           <Heading mt="10px" mb="10px">
             What we do
           </Heading>
-
+<Flex flexDirection={"column"} gap="10px" >
           <Box display="flex" alignItems="center" gap={"10px"}>
             {" "}
             <Image
@@ -90,8 +91,9 @@ const About: FunctionComponent = () => {
           borderRadius={["20px","30px","30px","20px","20px"]}
         >
         
-          Get Sarted →→
+          Get Sarted →
         </Button>
+        </Flex>
         </Box>
       </Box>
 

@@ -26,7 +26,7 @@ const Navbar: FunctionComponent =()=>{
   const newLocal= newLocal_1;
 
 return (
-    <Box position="fixed" w="100%" zIndex="4" >
+    <Box position="fixed" w="100%" zIndex="40" >
       <Flex
         w={[ "100%", "90%","100%", "90%", "90%"]}
         alignItems={"center"}

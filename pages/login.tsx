@@ -1,6 +1,6 @@
 import { Box, Button, Center, Flex, Image, Text } from "@chakra-ui/react";
 import * as React from "react";
-
+import Link from "next/link";
 interface IAppProps {}
 
 const Login: React.FunctionComponent<IAppProps> | any = () => {
@@ -19,7 +19,7 @@ const Login: React.FunctionComponent<IAppProps> | any = () => {
          color={"white"}
          borderRadius={"10px"}
         >
-          {" "}
+          <Link href="/signup"></Link>
           <Box>
             <Image  w={["50%","100%" ]}  src="/utils/Common/user.svg" alt="" />{" "}
           </Box>{" "}
@@ -32,7 +32,7 @@ const Login: React.FunctionComponent<IAppProps> | any = () => {
         </Flex>
         <Box color={"white"}>OR</Box>
         <Flex
-           w={["50%","41%","41%","18%","18%" ]}
+           w={["50%","41%","41%","22%","22%" ]}
           alignItems="center"
           bg=" #1ED760"
           gap={[ "0px", "10px"]}
@@ -40,6 +40,7 @@ const Login: React.FunctionComponent<IAppProps> | any = () => {
           color={"white"}
           borderRadius={"10px"}
         >
+          <Link href="/signup">
           <Box>
             {" "}
             <Image w={["50%","100%" ]}  src="/utils/Common/user2.svg" alt="" />
@@ -50,7 +51,8 @@ const Login: React.FunctionComponent<IAppProps> | any = () => {
             borderRadius={"20px"}
           >
             Signup as HOA Admin
-          </Text>{" "}
+          </Text>
+          </Link> 
         </Flex>
 
         <Image  w={["36%","12%" ]} src="/utils/Common/play-player.png" alt="" />
