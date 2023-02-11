@@ -16,7 +16,7 @@ const Signin: React.FunctionComponent<ISigninProps> | any = () => {
   return (
     <Flex
       bg="#050017"
-      pt="200px"
+      pt={["166px","200px","200px","200px","200px" ]} pb={["110px","400px","400px","40px","140px"]}
      
       flexDirection={"column"}
       alignItems={"center"}

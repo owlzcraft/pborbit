@@ -13,7 +13,7 @@ interface ISignupProps {}
 
 const Signup: React.FunctionComponent<ISignupProps> | any = () => {
   return (
-    <Box bg="#050017" pt="200px">
+    <Box bg="#050017" pt={["166px","200px","200px","200px","200px" ]} pb={["110px","400px","400px","40px","120px"]}>
       <Flex
       
         flexDirection={"column"}
@@ -33,7 +33,7 @@ const Signup: React.FunctionComponent<ISignupProps> | any = () => {
         >
           {" "}
           <Image src="/utils/common/email2.svg" alt="pborbit_logo" />
-          <Input color="white" border={"none"} placeholder="Enter Address" />
+          <Input color="white" border={"none"} placeholder="Enter Address"/>
         </Box>
 
         <Box
