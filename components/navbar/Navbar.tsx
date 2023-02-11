@@ -67,7 +67,7 @@ return (
             <h1>Contact Us</h1>
           </Link>
 
-          <Link href="/Pricing">
+          <Link href="/login">
           <Button
           
           colorScheme="whatsapp"

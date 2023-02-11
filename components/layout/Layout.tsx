@@ -13,9 +13,9 @@ const Layout: React.FunctionComponent<Props> = ({ children }) => {
   return (
     <div>
 
-      <Navbar/>
+ 
       {children}
-      <Footer/>
+     
     </div>
   );
 };

@@ -4,7 +4,7 @@ import { FunctionComponent } from 'react'
 const HomePage: FunctionComponent = () => {
 return (
         <Box pt={["100px","220px","220px","200px","320px"]} w="50%" ml={["40px","40px","40px","90px","75px"]} mb={["0px","0px","0px","190px","175px"]}>
-        <Text color={"green"} fontSize={["15px","15px","30px","30px","30px"]}>
+        <Text color={["green","green","green","green","green"]} fontSize={["15px","15px","30px","30px","30px"]}>
           We are pborbit
         </Text>
         <Heading fontSize={["15px","15px","30px","30px","40px"]} pr={["10px","10px","15px","10px","150px"]}>
