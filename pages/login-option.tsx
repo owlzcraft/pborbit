@@ -5,7 +5,7 @@ interface IAppProps {}
 
 const Login_option: React.FunctionComponent<IAppProps> | any = () => {
   return (
-    <Box bg="#050017" pt="200px">
+    <Box bg="#050017" pt={["166px","200px","200px","200px","200px" ]} pb={["110px","400px","400px","40px","80px"]}>
       <Flex flexDirection={"column"} alignItems="center" gap={"20px"}>
         <Image src="/utils/Common/logo.png" alt="" />
 <Heading color={"white"}>Let’s Get Started</Heading>

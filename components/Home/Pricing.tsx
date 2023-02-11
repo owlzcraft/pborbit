@@ -13,14 +13,14 @@ import { FunctionComponent } from "react";
 
 
 const Pricing: FunctionComponent | any = () => {
-  // const newLocal:object |any= {
-  //     w:"77%",
-  //     position:"absolute",
-  //     bottom:"57px",
-  //     right:"2px",
+  const newLocal:object |any= {
+      w:"77%",
+      position:"absolute",
+      bottom:"57px",
+      right:"2px",
 
 
-  //     zIndex:"-1"} 
+      zIndex:"-1"} 
 
 
   const NewType: String = "relative";
@@ -39,16 +39,25 @@ const Pricing: FunctionComponent | any = () => {
         industryLorem Ipsum is simply
       </Text>
     </Center>
-
-    <Flex gap={[10, 10]} mt="40px" ml={["50px", "20px", "20px", "80px", "200px"]} w={["80%", "90%"]} display={{ lg: "flex", md: "flex", sm: "block" }}>
-      <Box bg="#10023B" pb="200px" w={["90%", "40%"]} borderRadius={"10px"} position={"relative"}>
+<Center>
+    <Flex 
+    // mt="40px"
+    gap="40px" 
+    //  ml={["50px", "20px", "20px", "80px", "200px"]}
+     w={["80%", "90%","80%", "90%","90%"]} 
+     alignItems="center"
+    display={["block","block", "block","flex","flex" ]}>
+       
+       <Box mb="40px" bg="#10023B" pb="50px" w={["100%", "100%","100%", "90%","90%"]} mt="40px" borderRadius={"10px"} position={"relative"}>
         <Image
           position={"absolute"}
-          w="15%"
           src="/utils/Common/price-player.png"
           alt="pb"
-          top="20px"
-          left="20px"
+          
+          
+          w="9%"
+          top={["36px","45px","35px","27px","15px"]}
+          left={["40px","60px","80px","100px","125px"]}
         />
         <Center
           bg="#4B3294"
@@ -63,17 +72,20 @@ const Pricing: FunctionComponent | any = () => {
         </Center>
 
         <Center>
-          <Flex>
+          <Flex mt="40px">
             {" "}
             <Heading fontSize="40px">$12</Heading> <Text> per annul</Text>{" "}
           </Flex>
         </Center>
-        <Center mb="20px" mr="60px">
+        <Center mb="20px" 
+        // mr="60px"
+        >
           <Text color="#B4B4B6" fontSize="10px">
             of single{" "}
           </Text>
         </Center>
-        <Box pl={["0px", "150px"]} pt={["0px", "10px"]}>
+        <Flex flexDirection="column" gap ="20px" alignItems={"center"}>
+          <Box display={"flex"} flexDirection="column" gap ="20px">
           <Box display="flex" alignItems="center" gap={"10px"}>
             {" "}
             <Image
@@ -130,9 +142,9 @@ const Pricing: FunctionComponent | any = () => {
             <Text fontSize="20px"> Community Manage</Text>
           </Box>
 
-
+          </Box>
           <Button
-            mt={["30px", "0px"]}
+            mt={["30px", "40px"]}
             colorScheme="whatsapp"
             w="50%"
             fontSize={"13px"}
@@ -143,16 +155,17 @@ const Pricing: FunctionComponent | any = () => {
             Get Sarted{" "}
           </Button>
 
-        </Box>
+        </Flex>
       </Box>
-      <Box bg="#10023B" w={["90%", "40%"]} mt={["20px", "0px"]} mb={["20px", "0px"]} borderRadius={"10px"} position={"relative"}>
+      <Box bg="#10023B" pb="50px" w={["100%", "100%","100%", "90%","90%"]} borderRadius={"10px"} position={"relative"}>
         <Image
           position={"absolute"}
-          w="15%"
+          w="9%"
           src="/utils/Common/price-player.png"
           alt="pb"
-          top="20px"
-          left="20px"
+          // w="9%"
+          top={["36px","45px","35px","27px","15px"]}
+          left={["40px","60px","80px","100px","125px"]}
         />
         <Center
           bg="#4B3294"
@@ -160,24 +173,27 @@ const Pricing: FunctionComponent | any = () => {
           borderTopStartRadius={"10px"}
           mb="10px"
         >
-          <Heading fontSize="20px" p="20px">
-            {" "}
-            Player{" "}
-          </Heading>{" "}
+          <Heading fontSize="40px" p="20px">
+
+            Player
+          </Heading>
         </Center>
 
         <Center>
-          <Flex>
+          <Flex mt="40px">
             {" "}
-            <Heading fontSize="20px">$12</Heading> <Text> per annul</Text>{" "}
+            <Heading fontSize="40px">$12</Heading> <Text> per annul</Text>{" "}
           </Flex>
         </Center>
-        <Center mb="20px" mr="60px">
+        <Center mb="20px" 
+        // mr="60px"
+        >
           <Text color="#B4B4B6" fontSize="10px">
             of single{" "}
           </Text>
         </Center>
-        <Box p="20px">
+        <Flex flexDirection="column" gap ="20px" alignItems={"center"}>
+          <Box display={"flex"} flexDirection="column" gap ="20px">
           <Box display="flex" alignItems="center" gap={"10px"}>
             {" "}
             <Image
@@ -185,7 +201,7 @@ const Pricing: FunctionComponent | any = () => {
               src="/utils/Common/checklist.png"
               alt="pb"
             />{" "}
-            <Text> Court reservations</Text>
+            <Text fontSize="20px"> Court reservations</Text>
           </Box>
           <Box display="flex" alignItems="center" gap={"10px"}>
             {" "}
@@ -194,7 +210,7 @@ const Pricing: FunctionComponent | any = () => {
               src="/utils/Common/checklist.png"
               alt="pb"
             />
-            <Text> Community Manage</Text>
+            <Text fontSize="20px"> Community Manage</Text>
           </Box>
           <Box display="flex" alignItems="center" gap={"10px"}>
             {" "}
@@ -203,7 +219,7 @@ const Pricing: FunctionComponent | any = () => {
               src="/utils/Common/checklist.png"
               alt="pb"
             />
-            <Text> Manage Your Court Easily</Text>
+            <Text fontSize="20px"> Manage Your Court Easily</Text>
           </Box>
           <Box display="flex" alignItems="center" gap={"10px"}>
             {" "}
@@ -212,7 +228,7 @@ const Pricing: FunctionComponent | any = () => {
               src="/utils/Common/checklist.png"
               alt="pb"
             />
-            <Text> Court reservations</Text>
+            <Text fontSize="20px"> Court reservations</Text>
           </Box>
           <Box display="flex" alignItems="center" gap={"10px"}>
             {" "}
@@ -221,7 +237,7 @@ const Pricing: FunctionComponent | any = () => {
               src="/utils/Common/checklist.png"
               alt="pb"
             />
-            <Text> Install app and get Rewards</Text>
+            <Text fontSize="20px"> Install app and get Rewards</Text>
           </Box>
 
           <Box display="flex" alignItems="center" gap={"10px"}>
@@ -231,30 +247,32 @@ const Pricing: FunctionComponent | any = () => {
               src="/utils/Common/checklist.png"
               alt="pb"
             />
-            <Text> Community Manage</Text>
+            <Text fontSize="20px"> Community Manage</Text>
           </Box>
-          <Center>
-            <Button
-              mt="30px"
-              colorScheme="whatsapp"
-              w="50%"
-              fontSize={"13px"}
-              h="30px"
-              borderRadius={"20px"}
-            >
-              {" "}
-              Get Sarted{" "}
-            </Button>
-          </Center>
-        </Box>
-      </Box>{" "}
+
+          </Box>
+          <Button
+            mt={["30px", "40px"]}
+            colorScheme="whatsapp"
+            w="50%"
+            fontSize={"13px"}
+
+            borderRadius={"20px"}
+          >
+            {" "}
+            Get Sarted{" "}
+          </Button>
+
+        </Flex>
+      </Box>
+      
     </Flex>
+    </Center>
 
-
-    {/* <Image style= {newLocal}
+     <Image style= {newLocal}
       
       src="/utils/Common/price-bg.png"
-        alt="pborbit" /> */}
+        alt="pborbit" /> 
   </Box>
 
   );

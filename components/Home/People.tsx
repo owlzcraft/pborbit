@@ -6,11 +6,19 @@ const People: FunctionComponent = () => {
 
 
   return (
-    <Box  mt="40px">
-
+    <Box  mt="40px"  position="relative" zIndex="2" >
+ <Image
+ position ="absolute"
+ top={["202px","102px","50px","10px","0px"]}
+ zIndex="-1" 
+ left={["-11px","0px","0px","-27px","-27px"]}
+              w="16%"
+              src="/utils/Common/bsi1.png"
+              alt="pb"
+            />
       <Center >
 
-        <Heading size={"xl"} >What people say about PBorbot </Heading>
+        <Heading w={["50%","50%","50%","54%","54%"]} textAlign="center" size={"xl"} >What people say about PBorbot </Heading>
       </Center>
       <Center mt="20px">
         {" "}
@@ -19,10 +27,10 @@ const People: FunctionComponent = () => {
           setting industryLorem Ipsum is simply
         </Text>{" "}
       </Center>
-      <Box  display={[ "block", "flex", "flex", "flex" ,"flex"]} w="80%" m="auto" gap="25px">
+      <Box  display={[ "block", "block", "block", "flex" ,"flex"]} w="80%" m="auto" gap="25px">
 
 
-        <Box w={["90%","35%"]} bgColor="#0E343D">
+        <Box w={["100%","100%","100%","35%","35%"]} bgColor="#0E343D">
           <Center mt="20px">
 
             <Image
@@ -51,7 +59,7 @@ const People: FunctionComponent = () => {
           </Center>
         </Box>
 
-        <Box w={["90%","35%","35%","35%","35%"]} bgColor="#0E343D">
+        <Box w={["100%","100%","100%","35%","35%"]} bgColor="#0E343D">
           <Center mt="20px">
 
             <Image
@@ -80,7 +88,7 @@ const People: FunctionComponent = () => {
           </Center>
         </Box>
 
-        <Box w={["90%","35%","35%","35%","35%"]} bgColor="#0E343D">
+        <Box w={["100%","100%","100%","35%","35%"]} pt="20px" pb="20px" bgColor="#0E343D">
           <Center mt="20px">
 
             <Image
