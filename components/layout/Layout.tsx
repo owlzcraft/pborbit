@@ -12,7 +12,9 @@ interface LayoutProps {
 }
 const Layout: React.FunctionComponent<Props> = ({ children }) => {
   return (
-    <Box bg="#050017">
+    <Box bg="#050017" 
+    style={{fontFamily:"Poppins, sans-serif"}}
+    >
 
  
       {children}

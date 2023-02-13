@@ -1,7 +1,8 @@
-import { Box, Button, Heading, Image, Text } from '@chakra-ui/react';
+import { Box, Button,  Heading, Image, SlideFade, Text } from '@chakra-ui/react';
 import React from 'react';
+import { Fade } from 'react-reveal';
 import { FunctionComponent } from 'react'
-const HomePage: FunctionComponent = () => {
+const HomePage: FunctionComponent|any = () => {
 return (
         <Box   position="relative" pt={["100px","220px","220px","200px","320px"]} w="50%" ml={["80px","80px","80px","80px","85px"]} mb={["0px","0px","0px","190px","175px"]}>
           {/* shp1 */}
@@ -27,23 +28,24 @@ return (
         <Text color={["green","green","green","green","green"]} fontSize={["15px","15px","30px","30px","30px"]}>
           We are pborbit
         </Text>
-        <Heading fontSize={["15px","20px","30px","30px","40px"]} pr={["30px","50px","50px","100px","150px"]}>
+        <Heading style={{fontFamily:"Poppins, sans-serif"}} fontSize={["15px","20px","30px","30px","40px"]} pr={["30px","50px","50px","100px","150px"]}>
           Court reservation platform for private community, parks, and HOAs
         </Heading>
-        <Text fontSize={["10px","15px","30px","30px","30px"]}>
+        <Fade left casecode>
+        <Text fontSize={["10px","15px","30px","30px","30px"]}   wordBreak={"break-word"} >
           Our Activate suite of business apps gives your Lorem ipsum dolor
           sit amet, consectetur.
         </Text>
+        </Fade>
         <Button
-          mt="40px"
+          mt={["10px", "10px", "10px","10px" ,"40px"]}
           colorScheme="whatsapp"
-          w={["70%","40%","40%","40%","40%"]}
-          fontSize={["13px","15px","15px","20px","30px"]}
-          h={["40px","15px","30px","40px","60px"]}
-          borderRadius={["20px","15px","15px","20px","20px"]}
+          w={["100%", "53%", "35%", "35%","35%"]}
+          fontSize={["15px", "16px", "16px", "16px","16px", "20px"]}
+          h={["40px", "30px", "30px", "40px","40px"]}
+          borderRadius={["20px", "20px", "20px", "20px","20px"]}
         >
-        
-          Get Sarted →→
+          Get Sarted →
         </Button>
       </Box>
     );

@@ -44,7 +44,7 @@ const Pricing: FunctionComponent | any = () => {
     // mt="40px"
     gap="40px" 
     //  ml={["50px", "20px", "20px", "80px", "200px"]}
-     w={["80%", "90%","80%", "90%","90%"]} 
+     w={["80%", "90%","80%", "60%","60%"]} 
      alignItems="center"
     display={["block","block", "block","flex","flex" ]}>
        

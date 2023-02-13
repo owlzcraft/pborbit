@@ -23,6 +23,7 @@ return (
         <App_install/>
         <People/>
         <Pricing />
+        <hr></hr>
         <Footer />
       </div>
     );
