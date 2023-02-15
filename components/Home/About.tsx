@@ -1,6 +1,7 @@
 import { Box, Button, Heading, Image, Text } from '@chakra-ui/react';
 import React from 'react';
 import { FunctionComponent } from 'react'
+import { Fade } from 'react-reveal';
 import { Flex } from '@chakra-ui/react';
 const About: FunctionComponent = () => {
     return (
@@ -12,9 +13,12 @@ const About: FunctionComponent = () => {
         display={[ "block", "flex",  "flex"  ,"flex","flex" ]}
       >
         <Box>
-          <Image src="/utils/Common/about-img.png" alt="pborbit" />{" "}
+        <Fade left casecode>
+          <Image src="/utils/Common/about-img.png" alt="pborbit" />
+          </Fade>
         </Box>
         <Box pl={["0px", "0px","60px", "90px", "190px"]} w={["90%","50%","50%","50%","50%" ]}mt="80px">
+        <Fade right casecode>
           <Heading>About PBorbit</Heading>
           <Text pt="10px" color="#B4B4B6">
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -32,6 +36,7 @@ const About: FunctionComponent = () => {
               boxSize={["20px","20px","20px","20px","20px"]}
               src="/utils/Common/checklist.png"
               alt="pb"
+             
             />{" "}
             <Text> Court reservations</Text>
           </Box>
@@ -83,17 +88,19 @@ const About: FunctionComponent = () => {
           </Box>
 
           <Button
-          mt="40px"
-          colorScheme="whatsapp"
-          w={["70%","70%","70%","70%","50%"]}
-          fontSize={["15px","30px","20px","20px","30px"]}
-          h={["40px","30px","30px","40px","60px"]}
-          borderRadius={["20px","30px","30px","20px","20px"]}
+          mt={["10px", "10px", "10px","10px" ,"40px"]}
+          bg="#01df74"
+          w={["60%","55%", "60%", "80%","60%"]}
+          fontSize={["13px", "16px", "16px", "16px","16px", "20px"]}
+          h={["40px", "30px", "30px", "40px","40px"]}
+       
+          borderRadius={["20px", "25px", "25px", "25px","27px"]}
+          p="25px"
         >
-        
           Get Sarted →
         </Button>
         </Flex>
+        </Fade>
         </Box>
       </Box>
 

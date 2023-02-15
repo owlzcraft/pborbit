@@ -9,28 +9,28 @@ const People: FunctionComponent = () => {
     <Box  mt="40px"  position="relative" zIndex="2" >
  <Image
  position ="absolute"
- top={["202px","102px","50px","10px","0px"]}
+ top={["202px","102px","50px","10px","-100px"]}
  zIndex="-1" 
- left={["-11px","0px","0px","-27px","-27px"]}
+ left={["-11px","0px","0px","-27px","-0px"]}
               w="16%"
               src="/utils/Common/bsi1.png"
               alt="pb"
             />
       <Center >
 
-        <Heading w={["50%","50%","50%","54%","54%"]} textAlign="center" size={"xl"} >What people say about PBorbot </Heading>
+        <Heading w={["100%","50%","50%","54%","54%"]} textAlign="center" size={"xl"} >What people say about PBorbot </Heading>
       </Center>
       <Center mt="20px">
         {" "}
-        <Text w={["90%","35%"]} textAlign="center" color="#B4B4B6" m="20px">
+        <Text w={["100%","27%","27%","37%","27%"]} textAlign="center" color="#B4B4B6" m="20px">
           Lorem Ipsum is simply dummy text of the printing and type
           setting industryLorem Ipsum is simply
         </Text>{" "}
       </Center>
-      <Box  display={[ "block", "block", "block", "flex" ,"flex"]} w="80%" m="auto" gap="25px">
+      <Box  display={[ "block", "block", "block", "flex" ,"flex"]} w="75%" m="auto" gap="25px">
 
 
-        <Box w={["100%","100%","100%","35%","35%"]} bgColor="#0E343D">
+        <Box w={["100%","100%","100%","35%","35%"]} pt="40px" pb="40px" bgColor="#0E343D">
           <Center mt="20px">
 
             <Image
@@ -47,9 +47,9 @@ const People: FunctionComponent = () => {
 
 
           <Box borderTop={'1px solid #5F5F60'} w="90%" m="auto" ></Box>
-          <Center mb="80px">
+          <Center >
             <Flex alignItems="center" w="80%" m="auto" gap="5">
-              <Box mt="5px" w="15%" h="40px" borderRadius="50%" bgColor={"white"}></Box>
+              <Box mt="5px" w="40px" h="40px" borderRadius="50%" bgColor={"white"}></Box>
               <Box mt="5" w="70%" h="50px"  >
                 <Text>Mariella Wingniton</Text>
                 <Text color="#B4B4B6">Los Angeles CA</Text>
@@ -59,7 +59,7 @@ const People: FunctionComponent = () => {
           </Center>
         </Box>
 
-        <Box w={["100%","100%","100%","35%","35%"]} bgColor="#0E343D">
+        <Box w={["100%","100%","100%","35%","35%"]} pt="40px" pb="40px" bgColor="#0E343D">
           <Center mt="20px">
 
             <Image
@@ -76,9 +76,9 @@ const People: FunctionComponent = () => {
 
 
           <Box borderTop={'1px solid #5F5F60'} w="90%" m="auto" ></Box>
-          <Center mb="80px">
+          <Center >
             <Flex alignItems="center" w="80%" m="auto" gap="5">
-              <Box mt="5" w="15%" h="40px" borderRadius="50%" bgColor={"white"}></Box>
+              <Box mt="5" w="40px" h="40px" borderRadius="50%" bgColor={"white"}></Box>
               <Box mt="5" w="70%" h="50px"  >
                 <Text>Mariella Wingniton</Text>
                 <Text color="#B4B4B6">Los Angeles CA</Text>
@@ -88,7 +88,7 @@ const People: FunctionComponent = () => {
           </Center>
         </Box>
 
-        <Box w={["100%","100%","100%","35%","35%"]} pt="20px" pb="20px" bgColor="#0E343D">
+        <Box w={["100%","100%","100%","35%","35%"]} pt="40px" pb="40px" bgColor="#0E343D">
           <Center mt="20px">
 
             <Image
@@ -105,9 +105,9 @@ const People: FunctionComponent = () => {
 
 
           <Box borderTop={'1px solid #5F5F60'} w="90%" m="auto" ></Box>
-          <Center mb="80px">
+          <Center >
             <Flex alignItems="center" w="80%" m="auto" gap="5">
-              <Box mt="5" w="15%" h="40px" borderRadius="50%" bgColor={"white"}></Box>
+              <Box mt="5" w="40px" h="40px" borderRadius="50%" bgColor={"white"}></Box>
               <Box mt="5" w="70%" h="50px"  >
                 <Text>Mariella Wingniton</Text>
                 <Text color="#B4B4B6">Los Angeles CA</Text>

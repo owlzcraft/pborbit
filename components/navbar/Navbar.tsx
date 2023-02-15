@@ -36,6 +36,7 @@ return (
         justifyContent="space-evenly"
         position="relative"
       >
+        
         <Box w={["30%","40%","40%","40%","40%"]} mr={["100px","0px","0px","0px","0px"]} >
           <Image
             src="/utils/Common/logo.png"
@@ -48,12 +49,12 @@ return (
         alignItems={"center"}
         p="10px"
           w="60%"
-          justifyContent={"space-evenly"}
+          justifyContent={"space-between"}
           display={["none","none","none","flex","flex"]}
-          bg="#050017
-          
-          "
+          bg="#050017"
+          borderRadius={"6px"}
         >
+            <Flex pl="36px"  gap="60px">
           <Link href="/">
             <h1>Home</h1>
           </Link>
@@ -66,25 +67,25 @@ return (
           <Link href="/Contactus">
             <h1>Contact Us</h1>
           </Link>
-
+          </Flex>
           <Link href="/login">
           <Button
           
           colorScheme="whatsapp"
           w="100%"
-          fontSize={"14px"}
-          // h="40px"
+          fontSize={"13px"}
+          h="30px"
           borderRadius={"20px"}
           >
           {" "}
-          Login/sign up{" "}
+          Login/Signup{" "}
           </Button>
           </Link>
         </Flex>
 
         {/* menubar */}
 
-        <Box display={["block", "none","none", "none","none" ]}>
+        <Box display={["block", "block","block", "none","none" ]}>
           <Menu>
             {newLocal}
             <MenuList>
