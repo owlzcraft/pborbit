@@ -1,6 +1,8 @@
 import { Box, Button, Center, Heading, Image, Text } from "@chakra-ui/react";
 // import Image from 'next/image';
 // import Image from 'next/image';
+import Zoom from 'react-reveal/Zoom';
+import Flip from 'react-reveal/Flip';
 import React from "react";
 import { FunctionComponent } from "react";
 const How_it_work: FunctionComponent = () => {
@@ -15,7 +17,7 @@ const How_it_work: FunctionComponent = () => {
         {" "}
         <Center>
           {" "}
-          <Heading>How it Works</Heading>{" "}
+          <Heading> <Zoom top cascade> How it Works</Zoom></Heading>{" "}
         </Center>
         <Center mt={["0px", "20px"]}>
           {" "}
@@ -55,13 +57,16 @@ const How_it_work: FunctionComponent = () => {
         // pl={["50px", " 30px", "0px", "0px", "300px"]}
         // pr={["40px", "250px"]}
       >
-        <Box w={["30%", "100%", "30%"]} mr={["0px","50px"]}>
+     
+        <Box w={["30%", "30%", "30%","30%", "30%"]} mr={["0px","50px"]}>
+        <Flip left>
           <Image
             src="/utils/Common/how-player.png"
             alt="pb"
-            w={["100%", "100%", "100%"]}
+            w={["100%", "100%", "100%","100%", "100%"]}
             ml={"0px"}
-          />
+            />
+            </Flip>
         </Box>
         <Box  w={["70%", "100%", "100%","50%", "100%"]}
         //  p={["10px", " 300px", "0px", "0px", "120px"]}
@@ -104,7 +109,7 @@ const How_it_work: FunctionComponent = () => {
             ml={[ "20px" ,"30px" ,"40px" ,"43px" , "43px"]}
             borderLeft={[ "dashed 2px", "dashed 2px", "dashed 2px", "dashed 3px", "dashed 3px"]}
             // borderColor={"#3333ff"}
-            h={["21px", "42px"]}
+            h={["21px", "22px","21px", "22px", "22px"]}
             color="teal"
             w="0px"
           ></Box>
@@ -146,7 +151,7 @@ const How_it_work: FunctionComponent = () => {
           ml={[ "20px" ,"30px" ,"40px" ,"43px" , "43px"]}
           borderLeft={[ "dashed 2px", "dashed 2px", "dashed 2px", "dashed 3px", "dashed 3px"]}
           color="teal"
-            h={["21px", "42px"]}
+          h={["21px", "22px","21px", "22px", "22px"]}
             w="0px"
           ></Box>
         <Box display="flex" alignItems="center" gap={["25px","25px"]}>
@@ -195,7 +200,7 @@ const How_it_work: FunctionComponent = () => {
           colorScheme="whatsapp"
           w={["100%", "100%", "100%", "100%","100%"]}
           fontSize={["15px", "16px", "16px", "16px","16px", "20px"]}
-          h={["40px", "30px", "30px", "40px","40px"]}
+          h={["35px", "30px", "30px", "40px","40px"]}
           borderRadius={["20px", "20px", "20px", "20px","20px"]}
         >
           Get Sarted →

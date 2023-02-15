@@ -90,8 +90,8 @@ const About: FunctionComponent = () => {
           <Button
           mt={["10px", "10px", "10px","10px" ,"40px"]}
           colorScheme="whatsapp"
-          w={["100%", "100%", "100%", "100%","100%"]}
-          fontSize={["15px", "16px", "16px", "16px","16px", "20px"]}
+          w={["60%","55%", "60%", "80%","60%"]}
+          fontSize={["13px", "16px", "16px", "16px","16px", "20px"]}
           h={["40px", "30px", "30px", "40px","40px"]}
           borderRadius={["20px", "20px", "20px", "20px","20px"]}
         >

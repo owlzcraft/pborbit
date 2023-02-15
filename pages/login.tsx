@@ -3,6 +3,7 @@ import * as React from "react";
 import Link from "next/link";
 import Spin from 'react-reveal/Spin';
 import Jump from 'react-reveal/Jump';
+
 interface IAppProps {}
 
 const Login: React.FunctionComponent<IAppProps> | any = () => {
