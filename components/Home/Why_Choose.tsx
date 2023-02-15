@@ -2,6 +2,7 @@ import { Box, Center, Grid, GridItem, Heading, Image, Text } from '@chakra-ui/re
 // import Image from 'next/image';
 import React from 'react';
 import { FunctionComponent } from 'react'
+import { Fade } from 'react-reveal';
 const Why_choose: FunctionComponent = () => {
     return (
     
@@ -10,11 +11,13 @@ const Why_choose: FunctionComponent = () => {
          pr={[ "50px", "50px","50px", "50px", "50px"]}
           mt="80px"  display={[ "block", "flex", "flex", "flex", "flex" ]} flexDirection={["column","column","row","row","row"]} alignItems="center" >
         <Box>
-       
-          <Image src="/utils/Common/why-img.png" alt="pb" />
-        </Box>
+        <Fade right casecode>
 
-        <Box>
+          <Image src="/utils/Common/why-img.png" alt="pb" />
+        </Fade>
+        </Box>
+        <Fade left casecode>
+<Box>
           {" "}
           <Heading mt="40px" mb="40px">
             Why Choose PBorbit
@@ -23,6 +26,7 @@ const Why_choose: FunctionComponent = () => {
             Lorem Ipsum is simply dummy text of the printing and type
             setting industryLorem Ipsum is simply
           </Text>
+         
           <Grid
             templateColumns="repeat(2, 1fr)"
             templateRows="repeat(2, 1fr)"
@@ -54,7 +58,7 @@ const Why_choose: FunctionComponent = () => {
             </GridItem>
           </Grid>
         </Box>
-
+        </Fade>
       </Box>
       
     );

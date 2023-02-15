@@ -27,7 +27,7 @@ const Pricing: FunctionComponent | any = () => {
 
   return(
 
-  <Box position={["relative", "relative", "relative"]} zIndex="0">
+  <Box position={["relative", "relative", "relative"]} zIndex="0" mb="40px">
     <Center mt="40px">
 
       <Heading>Our Best Pricing</Heading>
@@ -44,7 +44,7 @@ const Pricing: FunctionComponent | any = () => {
     // mt="40px"
     gap="40px" 
     //  ml={["50px", "20px", "20px", "80px", "200px"]}
-     w={["80%", "90%","80%", "60%","60%"]} 
+     w={["80%", "90%","80%", "85%","60%"]} 
      alignItems="center"
     display={["block","block", "block","flex","flex" ]}>
        

@@ -89,11 +89,13 @@ const About: FunctionComponent = () => {
 
           <Button
           mt={["10px", "10px", "10px","10px" ,"40px"]}
-          colorScheme="whatsapp"
+          bg="#01df74"
           w={["60%","55%", "60%", "80%","60%"]}
           fontSize={["13px", "16px", "16px", "16px","16px", "20px"]}
           h={["40px", "30px", "30px", "40px","40px"]}
-          borderRadius={["20px", "20px", "20px", "20px","20px"]}
+       
+          borderRadius={["20px", "25px", "25px", "25px","27px"]}
+          p="25px"
         >
           Get Sarted →
         </Button>
