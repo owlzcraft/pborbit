@@ -26,6 +26,7 @@ const Signin: React.FunctionComponent<ISigninProps> | any = () => {
       <Image
         w={["80%", "41%", "41%", "41%", "41%"]}
         position="absolute"
+        left={"0px"}
         bottom={["14px", "0px"]}
         src="/utils/Common/bg.png"
         alt=""
@@ -44,7 +45,7 @@ const Signin: React.FunctionComponent<ISigninProps> | any = () => {
       >
         {" "}
         <Image src="/utils/common/attherate.svg" alt="pborbit_logo" />
-        <Input color="white" border={"none"} placeholder="Enter Address" />
+        <Input variant='unstyled' color="white" border={"none"} placeholder="Enter Address" />
       </Box>
 
       <Box
@@ -61,7 +62,7 @@ const Signin: React.FunctionComponent<ISigninProps> | any = () => {
       <Box
         w={["60%", "50%", "45%", "22%"]}
         fontSize={["8px", "10px", "10px", "10px"]}
-        border={"1px solid red"}
+       
         display="flex"
         alignItems={"center"}
         justifyContent={"space-between"}

@@ -51,7 +51,7 @@ const Login: React.FunctionComponent<IAppProps> | any = () => {
            color={"white"}
            borderRadius={"10px"}
         >  
-          <Box w={["29.5px","27.5px","27.5px","27.5px"]} ml={["51px","51px","51px","61px","61px"]}>
+          <Box w={["29.5px","27.5px","27.5px","35.5px"]} ml={["51px","51px","51px","61px","61px"]}>
             {" "}
             <Image w={["100%","100%","100%","100%","100%" ]}  src="/utils/Common/user2.svg" alt="" />
           </Box>{" "}

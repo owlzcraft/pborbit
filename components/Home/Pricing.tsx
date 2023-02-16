@@ -8,6 +8,7 @@ import {
   Image,
   Text,
 } from "@chakra-ui/react";
+import { Fade } from 'react-reveal';
 import React from "react";
 import { FunctionComponent } from "react";
 
@@ -48,16 +49,19 @@ const Pricing: FunctionComponent | any = () => {
      alignItems="center"
     display={["block","block", "block","flex","flex" ]}>
        
-       <Box mb="40px" bg="#10023B" pb="50px" w={["100%", "100%","100%", "90%","90%"]} mt="40px" borderRadius={"10px"} position={"relative"}>
+    <Box   w={["100%", "100%","100%", "90%","90%"]}>
+  <Fade top casecode >
+       <Box  _hover={{ bg: 'white',color:"black" ,transform:"scale(1.1)" }} mb="40px" bg="#10023B" pb="50px" 
+       w={["100%", "100%","100%", "90%","90%"]} mt="40px" borderRadius={"10px"} position={"relative"}>
         <Image
           position={"absolute"}
           src="/utils/Common/price-player.png"
           alt="pb"
           
           
-          w="9%"
-          top={["36px","45px","35px","27px","15px"]}
-          left={["40px","60px","80px","100px","125px"]}
+          w="13%"
+          top={["36px","45px","35px","27px","16px"]}
+          left={["40px","60px","80px","100px","63px"]}
         />
         <Center
           bg="#4B3294"
@@ -157,15 +161,20 @@ const Pricing: FunctionComponent | any = () => {
 
         </Flex>
       </Box>
-      <Box bg="#10023B" pb="50px" w={["100%", "100%","100%", "90%","90%"]} borderRadius={"10px"} position={"relative"}>
+      </Fade>
+      </Box>
+      <Box  w={["100%", "100%","100%", "90%","90%"]}>
+        <Fade bottom casecode>
+      <Box  _hover={{ bg: 'white',color:"black" ,transform:"scale(1.1)" }} bg="#10023B" pb="50px"
+       w={["100%", "100%","100%", "90%","90%"]} borderRadius={"10px"} position={"relative"}>
         <Image
           position={"absolute"}
-          w="9%"
+          w="13%"
           src="/utils/Common/price-player.png"
           alt="pb"
           // w="9%"
-          top={["36px","45px","35px","27px","15px"]}
-          left={["40px","60px","80px","100px","125px"]}
+          top={["36px","45px","35px","27px","16px"]}
+          left={["40px","60px","80px","100px","63px"]}
         />
         <Center
           bg="#4B3294"
@@ -264,6 +273,8 @@ const Pricing: FunctionComponent | any = () => {
           </Button>
 
         </Flex>
+        </Box>
+    </Fade>
       </Box>
       
     </Flex>

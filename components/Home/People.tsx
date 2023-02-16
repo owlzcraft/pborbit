@@ -1,4 +1,5 @@
 // import React from 'react';
+import { Fade } from 'react-reveal';
 import { FunctionComponent } from 'react'
 import { Box, Center, Flex, Heading, Image, Text } from '@chakra-ui/react';
 // import { NextScript } from 'next/document';
@@ -28,9 +29,10 @@ const People: FunctionComponent = () => {
         </Text>{" "}
       </Center>
       <Box  display={[ "block", "block", "block", "flex" ,"flex"]} w="75%" m="auto" gap="25px">
+      <Box w={["100%","100%","100%","35%","35%"]} >
 
-
-        <Box w={["100%","100%","100%","35%","35%"]} pt="40px" pb="40px" bgColor="#0E343D">
+      <Fade top casecode>
+        <Box w="100%" pt="40px" pb="40px" mb="100px"  _hover={{ bg: 'white',color:"black",transform:"scale(1.1)"  }}  bgColor="#0E343D">
           <Center mt="20px">
 
             <Image
@@ -49,7 +51,9 @@ const People: FunctionComponent = () => {
           <Box borderTop={'1px solid #5F5F60'} w="90%" m="auto" ></Box>
           <Center >
             <Flex alignItems="center" w="80%" m="auto" gap="5">
-              <Box mt="5px" w="40px" h="40px" borderRadius="50%" bgColor={"white"}></Box>
+              <Box mt="5px" w="40px" h="40px" borderRadius="50%" bgColor={"white"}>
+                 <Image borderRadius="50%" w="100%" 
+                 src="https://png.pngtree.com/png-vector/20190321/ourmid/pngtree-vector-users-icon-png-image_856952.jpg" alt='av' /> </Box>
               <Box mt="5" w="70%" h="50px"  >
                 <Text>Mariella Wingniton</Text>
                 <Text color="#B4B4B6">Los Angeles CA</Text>
@@ -57,9 +61,12 @@ const People: FunctionComponent = () => {
 
             </Flex>
           </Center>
+          </Box>
+        </Fade>
         </Box>
-
-        <Box w={["100%","100%","100%","35%","35%"]} pt="40px" pb="40px" bgColor="#0E343D">
+        <Box w={["100%","100%","100%","35%","35%"]} >
+        <Fade left casecode>
+        <Box w="100%"  pt="40px" pb="40px" mb="100px"    _hover={{ bg: 'white',color:"black",transform:"scale(1.1)" }} bgColor="#0E343D">
           <Center mt="20px">
 
             <Image
@@ -78,7 +85,8 @@ const People: FunctionComponent = () => {
           <Box borderTop={'1px solid #5F5F60'} w="90%" m="auto" ></Box>
           <Center >
             <Flex alignItems="center" w="80%" m="auto" gap="5">
-              <Box mt="5" w="40px" h="40px" borderRadius="50%" bgColor={"white"}></Box>
+              <Box mt="5" w="40px" h="40px" borderRadius="50%" bgColor={"white"}> <Image borderRadius="50%" w="100%" 
+                 src="https://png.pngtree.com/png-vector/20190321/ourmid/pngtree-vector-users-icon-png-image_856952.jpg" alt='av' /></Box>
               <Box mt="5" w="70%" h="50px"  >
                 <Text>Mariella Wingniton</Text>
                 <Text color="#B4B4B6">Los Angeles CA</Text>
@@ -86,9 +94,12 @@ const People: FunctionComponent = () => {
 
             </Flex>
           </Center>
+          </Box>
+        </Fade>
         </Box>
-
-        <Box w={["100%","100%","100%","35%","35%"]} pt="40px" pb="40px" bgColor="#0E343D">
+<Box w={["100%","100%","100%","35%","35%"]} >
+        <Fade bottom casecode>
+        <Box w="100%" pt="40px" pb="40px" mb="100px"  _hover={{ bg: 'white',color:"black" ,transform:"scale(1.1)" }}  bgColor="#0E343D">
           <Center mt="20px">
 
             <Image
@@ -107,17 +118,18 @@ const People: FunctionComponent = () => {
           <Box borderTop={'1px solid #5F5F60'} w="90%" m="auto" ></Box>
           <Center >
             <Flex alignItems="center" w="80%" m="auto" gap="5">
-              <Box mt="5" w="40px" h="40px" borderRadius="50%" bgColor={"white"}></Box>
+              <Box mt="5" w="40px" h="40px" borderRadius="50%" bgColor={"white"}> <Image borderRadius="50%" w="100%" 
+                 src="https://png.pngtree.com/png-vector/20190321/ourmid/pngtree-vector-users-icon-png-image_856952.jpg" alt='av' /></Box>
               <Box mt="5" w="70%" h="50px"  >
                 <Text>Mariella Wingniton</Text>
                 <Text color="#B4B4B6">Los Angeles CA</Text>
               </Box>
-
             </Flex>
           </Center>
         </Box>
 
-
+              </Fade>
+        </Box>
 
       </Box>
     </Box>

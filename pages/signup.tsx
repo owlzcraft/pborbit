@@ -40,7 +40,7 @@ const Signup: React.FunctionComponent<ISignupProps> | any = () => {
         >
           {" "}
           <Image src="/utils/common/email2.svg" alt="pborbit_logo" />
-          <Input color="white" border={"none"} placeholder="Enter Address" />
+          <Input variant='unstyled' color="white" border={"none"} placeholder="Enter Address" />
         </Box>
 
         <Box

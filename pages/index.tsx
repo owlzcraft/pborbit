@@ -14,7 +14,7 @@ import {
   Flex
 } from "@chakra-ui/react";
 import Home from "./Home";
-
+// declare module "react-Reveal";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Homee() {
