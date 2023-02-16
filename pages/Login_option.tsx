@@ -8,7 +8,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import * as React from "react";
-import {Spin} from "react-reveal";
+// import {Spin} from "react-reveal";
 interface IAppProps {}
 
 const Login_option: React.FunctionComponent<IAppProps> | any = () => {
@@ -29,16 +29,16 @@ const Login_option: React.FunctionComponent<IAppProps> | any = () => {
       <Flex flexDirection={"column"} alignItems="center" gap={"20px"}>
         <Box
           w={["40%", "40%", "40%", "30%", "20%"]}
-          mb={["73px", "73px", "73px", "40px", "80px"]}
+          mb={["73px", "73px", "73px", "40px", "57px"]}
         >
-          <Spin>
+          {/* <Spin> */}
             <Image
               w={["100%", "100%", "100%", "100%", "100%"]}
               mb={["20px", "20px", "20px", "20px", "20px"]}
               src="/utils/Common/logo.png"
               alt=""
             />
-          </Spin>
+          {/* </Spin> */}
         </Box>
         <Heading color={"white"}>Let’s Get Started</Heading>
 
@@ -130,7 +130,7 @@ const Login_option: React.FunctionComponent<IAppProps> | any = () => {
           </Text>
           {/* </Box> */}
         </Flex>
-        <Text color="white">Already have an account? Signin</Text>
+        <Text mt="4px" color="white">Already have an account? Signin</Text>
       </Flex>
     </Box>
   );

@@ -9,13 +9,14 @@ import {
   Input,
   Text,
 } from "@chakra-ui/react";
+import Link from "next/link";
 interface ISignupProps {}
 
 const Signup: React.FunctionComponent<ISignupProps> | any = () => {
   return (
     <Box
       bg="#050017"
-      pt={["166px", "200px", "200px", "200px", "200px"]}
+      pt={["166px", "200px", "200px", "200px", "100px"]}
       pb={["110px", "400px", "400px", "40px", "120px"]}
       position="relative"
     >
@@ -40,7 +41,7 @@ const Signup: React.FunctionComponent<ISignupProps> | any = () => {
         >
           {" "}
           <Image src="/utils/common/email2.svg" alt="pborbit_logo" />
-          <Input variant='unstyled' color="white" border={"none"} placeholder="Enter Address" />
+          <Input variant='unstyled' p="10px" color="white" border={"none"} placeholder="Enter Address" />
         </Box>
 
         <Box
@@ -52,7 +53,7 @@ const Signup: React.FunctionComponent<ISignupProps> | any = () => {
         >
           {" "}
           <Image src="/utils/common/attherate.svg" alt="pborbit_logo" />
-          <Input color="white" border={"none"} placeholder="Enter Address" />
+          <Input variant='unstyled' p="10px" color="white" border={"none"} placeholder="Enter Address" />
         </Box>
 
         <Box
@@ -65,7 +66,7 @@ const Signup: React.FunctionComponent<ISignupProps> | any = () => {
         >
           {" "}
           <Image src="/utils/common/password.svg" alt="pborbit_logo" />
-          <Input color="white" border={"none"} placeholder="Enter Address" />
+          <Input variant='unstyled' p="10px" color="white" border={"none"} placeholder="Enter Address" />
           <Image src="/utils/common/hide-2.svg" alt="pborbit_logo" />
         </Box>
 
@@ -77,10 +78,11 @@ const Signup: React.FunctionComponent<ISignupProps> | any = () => {
         >
           Sign Up
         </Button>
-
-        <Text mt="30px" color="white">
+<Link href="/signin">
+        <Text mt="45px" color="white">
           Already have an account? Signin
         </Text>
+</Link>
 
         {/* second page */}
       </Flex>

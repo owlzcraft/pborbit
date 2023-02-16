@@ -1,7 +1,7 @@
 import { Box, Button, Center, Flex, Image, Text } from "@chakra-ui/react";
 import * as React from "react";
 import Link from "next/link";
-import {Spin} from 'react-reveal';
+import {Rotate} from 'react-reveal';
 import {Jump} from 'react-reveal';
 
 interface IAppProps {}
@@ -11,11 +11,11 @@ const Login: React.FunctionComponent<IAppProps> | any = () => {
     <Box bg="#050017" pt={["236px","260px","450px","60px","100px" ]}pb={["170px","400px","400px","40px","40px"]} position="relative" >
         <Image w={["80%","41%","41%","41%","41%" ]}position="absolute" bottom={["14px","0px" ]} src="/utils/Common/bg.png" alt="" />
       <Flex flexDirection={"column"} alignItems="center" gap={"20px"}>
-        <Box w={["40%","40%","40%","30%","20%" ]} mb={["73px","73px","73px","40px","80px"]} >
-      <Spin>
+        <Box w={["40%","40%","40%","30%","20%" ]} mb={["73px","73px","73px","40px","54px"]} >
+      {/* <Spin> */}
 
         <Image w={["100%","100%","100%","100%","100%" ]} mb={["20px","20px","20px","20px" ,"20px"]} src="/utils/Common/logo.png" alt="" />
-        </Spin>
+        {/* </Spin> */}
         </Box>
         <Flex
         w={["266px","366px","366px","366px","366px" ]}
@@ -65,12 +65,12 @@ const Login: React.FunctionComponent<IAppProps> | any = () => {
           </Link> 
           </Text>
         </Flex>
-        <Jump>
-          <Box w={["36%","100%" ]}>
+        <Rotate top left>
+          <Box w="100%">
 
-        <Image  w={["36%","100%" ]} src="/utils/Common/play-player.png" alt="" />
+        <Image  w="100%" src="/utils/Common/play-player.png" alt="" />
           </Box>
-        </Jump>
+        </Rotate>
         <Text color="white">Already have an account? Signin</Text>
       </Flex>
     </Box>

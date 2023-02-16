@@ -16,7 +16,7 @@ const Signin: React.FunctionComponent<ISigninProps> | any = () => {
   return (
     <Flex
       bg="#050017"
-      pt={["166px", "200px", "200px", "200px", "200px"]}
+      pt={["166px", "200px", "200px", "200px", "100px"]}
       pb={["110px", "400px", "400px", "40px", "140px"]}
       position="relative"
       flexDirection={"column"}
@@ -45,7 +45,7 @@ const Signin: React.FunctionComponent<ISigninProps> | any = () => {
       >
         {" "}
         <Image src="/utils/common/attherate.svg" alt="pborbit_logo" />
-        <Input variant='unstyled' color="white" border={"none"} placeholder="Enter Address" />
+        <Input variant='unstyled' p="10px" color="white" border={"none"} placeholder="Enter Address" />
       </Box>
 
       <Box
@@ -57,7 +57,7 @@ const Signin: React.FunctionComponent<ISigninProps> | any = () => {
       >
         {" "}
         <Image src="/utils/common/password.svg" alt="pborbit_logo" />
-        <Input color="white" border={"none"} placeholder="Enter Address" />
+        <Input variant='unstyled' p="10px" color="white" border={"none"} placeholder="Enter Address" />
       </Box>
       <Box
         w={["60%", "50%", "45%", "22%"]}
@@ -84,7 +84,7 @@ const Signin: React.FunctionComponent<ISigninProps> | any = () => {
         Login
       </Button>
 
-      <Text mt="30px" color="white">
+      <Text mt="119px" color="white">
         Don’t have an account? SignUp
       </Text>
     </Flex>

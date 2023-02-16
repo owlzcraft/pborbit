@@ -20,7 +20,10 @@ const newLocal_2 = <MenuButton
   as={IconButton}
   aria-label="Options"
   icon={<HamburgerIcon />}
-  variant="outline" />;
+  // variant="outline"
+  bg="transparent"
+  _hover={{ bg:"transparent" }} 
+  />;
 const Navbar: FunctionComponent =()=>{
   const newLocal_1 = newLocal_2;
   const newLocal= newLocal_1;
@@ -89,11 +92,23 @@ return (
           <Menu>
             {newLocal}
             <MenuList>
-              <MenuItem>New Tab</MenuItem>
-              <MenuItem>New Tab</MenuItem>
-              <MenuItem>New Tab</MenuItem>
-              <MenuItem>New Tab</MenuItem>
-              <MenuItem>New Tab</MenuItem>
+              <MenuItem color={"red"}>Home</MenuItem>
+              <MenuItem color={"red"}>Features</MenuItem>
+              <MenuItem color={"red"}>Pricing</MenuItem>
+              <MenuItem color={"red"}>Contact Us</MenuItem>
+              <MenuItem color={"red"}><Link href="/login">
+          <Button
+          
+          colorScheme="whatsapp"
+          w="100%"
+          fontSize={"13px"}
+          h="30px"
+          borderRadius={"20px"}
+          >
+          {" "}
+          Login/Signup{" "}
+          </Button>
+          </Link></MenuItem>
             </MenuList>
           </Menu>
         </Box>
