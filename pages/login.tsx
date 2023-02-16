@@ -1,8 +1,8 @@
 import { Box, Button, Center, Flex, Image, Text } from "@chakra-ui/react";
 import * as React from "react";
 import Link from "next/link";
-import Spin from 'react-reveal/Spin';
-import Jump from 'react-reveal/Jump';
+import {Spin} from 'react-reveal';
+import {Jump} from 'react-reveal';
 
 interface IAppProps {}
 

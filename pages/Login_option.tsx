@@ -8,7 +8,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import * as React from "react";
-import Spin from "react-reveal/Spin";
+import {Spin} from "react-reveal";
 interface IAppProps {}
 
 const Login_option: React.FunctionComponent<IAppProps> | any = () => {

@@ -1,7 +1,7 @@
 import { Box, Button, Center, Heading, Image, Text } from "@chakra-ui/react";
 
-import Zoom from 'react-reveal/Zoom';
-import Flip from 'react-reveal/Flip';
+import {Zoom} from 'react-reveal';
+import {Flip} from 'react-reveal';
 import { Fade } from 'react-reveal';
 import React from "react";
 import { FunctionComponent } from "react";
