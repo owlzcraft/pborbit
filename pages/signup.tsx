@@ -13,6 +13,16 @@ import Link from "next/link";
 interface ISignupProps {}
 
 const Signup: React.FunctionComponent<ISignupProps> | any = () => {
+  const [email,setEmail]= React.useState("")
+  const [password,setPassword]= React.useState("")
+  const handleSubmit=()=>{
+    
+    const payload={
+      email,
+      password
+    }
+    console.log(payload)
+  }
   return (
     <Box
       bg="#050017"
@@ -53,7 +63,7 @@ const Signup: React.FunctionComponent<ISignupProps> | any = () => {
         >
           {" "}
           <Image src="/utils/common/attherate.svg" alt="pborbit_logo" />
-          <Input variant='unstyled' p="10px" color="white" border={"none"} placeholder="Enter Address" />
+          <Input variant='unstyled' p="10px" color="white" border={"none"} placeholder="Enter Address"  onChange={(e)=>setEmail(e.target.value)} value={email} />
         </Box>
 
         <Box
@@ -66,7 +76,7 @@ const Signup: React.FunctionComponent<ISignupProps> | any = () => {
         >
           {" "}
           <Image src="/utils/common/password.svg" alt="pborbit_logo" />
-          <Input variant='unstyled' p="10px" color="white" border={"none"} placeholder="Enter Address" />
+          <Input variant='unstyled' p="10px" color="white" border={"none"} placeholder="Enter Address"  onChange={(e)=>setPassword(e.target.value)} value={password}  />
           <Image src="/utils/common/hide-2.svg" alt="pborbit_logo" />
         </Box>
 
@@ -75,6 +85,7 @@ const Signup: React.FunctionComponent<ISignupProps> | any = () => {
           bg="#00E276"
           color="white"
           w={["60%", "50%", "45%", "22%"]}
+          onClick={()=>handleSubmit()}
         >
           Sign Up
         </Button>

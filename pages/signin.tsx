@@ -8,11 +8,23 @@ import {
   Input,
   Text,
 } from "@chakra-ui/react";
+import Link from "next/link";
 import * as React from "react";
+import { useState } from "react";
 
 interface ISigninProps {}
 
 const Signin: React.FunctionComponent<ISigninProps> | any = () => {
+  const [email,setEmail]= useState("")
+  const [password,setPassword]= useState("")
+  const handleSubmit=()=>{
+    
+    const payload={
+      email,
+      password
+    }
+    console.log(payload)
+  }
   return (
     <Flex
       bg="#050017"
@@ -45,7 +57,8 @@ const Signin: React.FunctionComponent<ISigninProps> | any = () => {
       >
         {" "}
         <Image src="/utils/common/attherate.svg" alt="pborbit_logo" />
-        <Input variant='unstyled' p="10px" color="white" border={"none"} placeholder="Enter Address" />
+        <Input variant='unstyled' p="10px" color="white" border={"none"} autoComplete="email" required  placeholder="Enter Address" 
+        onChange={(e)=>setEmail(e.target.value)} value={email} />
       </Box>
 
       <Box
@@ -57,7 +70,9 @@ const Signin: React.FunctionComponent<ISigninProps> | any = () => {
       >
         {" "}
         <Image src="/utils/common/password.svg" alt="pborbit_logo" />
-        <Input variant='unstyled' p="10px" color="white" border={"none"} placeholder="Enter Address" />
+        <Input 
+        variant='unstyled' p="10px" color="white" border={"none"}  type="password" autoComplete="new-password" required placeholder="password"
+         onChange={(e)=>setPassword(e.target.value)} value={password} />
       </Box>
       <Box
         w={["60%", "50%", "45%", "22%"]}
@@ -80,12 +95,14 @@ const Signin: React.FunctionComponent<ISigninProps> | any = () => {
         bg="#00E276"
         color="white"
         w={["60%", "50%", "45%", "22%"]}
+        onClick={()=>handleSubmit()}
       >
         Login
       </Button>
-
       <Text mt="119px" color="white">
+      <Link href="/signup">
         Don’t have an account? SignUp
+      </Link>
       </Text>
     </Flex>
   );

@@ -1,8 +1,7 @@
 import { Box, Button, Center, Flex, Image, Text } from "@chakra-ui/react";
 import * as React from "react";
 import Link from "next/link";
-import {Rotate} from 'react-reveal';
-import {Jump} from 'react-reveal';
+
 
 interface IAppProps {}
 
@@ -65,13 +64,16 @@ const Login: React.FunctionComponent<IAppProps> | any = () => {
           </Link> 
           </Text>
         </Flex>
-        <Rotate top left>
-          <Box w="100%">
+       
+         
 
-        <Image  w="100%" src="/utils/Common/play-player.png" alt="" />
-          </Box>
-        </Rotate>
+        <Image   src="/utils/Common/play-player.png" alt="" />
+       
+      
+        <Link href="/signin">
+
         <Text color="white">Already have an account? Signin</Text>
+        </Link>
       </Flex>
     </Box>
   );
