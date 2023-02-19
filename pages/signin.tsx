@@ -11,6 +11,7 @@ import {
 import Link from "next/link";
 import * as React from "react";
 import { useState } from "react";
+import  axios  from 'axios';
 
 interface ISigninProps {}
 
@@ -24,6 +25,10 @@ const Signin: React.FunctionComponent<ISigninProps> | any = () => {
       password
     }
     console.log(payload)
+axios.post("https://zany-puce-raven-cuff.cyclic.app/user/login",payload).then((e)=>{
+  console.log(e.data.token)
+})
+
   }
   return (
     <Flex
